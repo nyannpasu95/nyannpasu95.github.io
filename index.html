@@ -62,6 +62,13 @@
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
+        .project-image {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
         .project-title {
             font-size: 1.5rem;
             margin-top: 0;
@@ -156,6 +163,20 @@
         .coming-soon {
             opacity: 0.7;
         }
+        .project-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .project-link:hover {
+            background: #0056b3;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -169,6 +190,7 @@
         <h2>Projects</h2>
 
         <div class="project-card">
+            <img src="MagicTapper.png" alt="MagicTapper App Icon" class="project-image">
             <h3 class="project-title">MagicTapper <span class="project-badge">Free</span></h3>
             <p class="project-description"><strong>Tap-to-click for Apple Magic Mouse</strong></p>
             <p>MagicTapper brings trackpad-style tap-to-click functionality to the Apple Magic Mouse. Enjoy a smoother, quieter, and more ergonomic experience by reducing the need for physical clicks.</p>
@@ -178,6 +200,7 @@
                 <li>Lightweight and runs in the background</li>
                 <li>Compatible with macOS</li>
             </ul>
+            <a href="https://github.com/nyannpasu95/MagicTapper" class="project-link" target="_blank" rel="noopener">View on GitHub</a>
         </div>
 
         <div class="project-card coming-soon">
