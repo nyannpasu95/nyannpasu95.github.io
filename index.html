@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nyannpasu95 - Software & Tools</title>
+    <meta name="description" content="Independent developer creating useful macOS tools and utilities. Home of MagicTapper and more.">
     <style>
         :root {
             --primary-color: #007AFF;
             --text-color: #333;
             --bg-color: #fff;
-            --secondary-bg: #f9f9f9;
+            --secondary-bg: #f5f5f7;
+            --accent-color: #FF6B6B;
+        }
+        * {
+            box-sizing: border-box;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -18,6 +23,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
+            background: var(--bg-color);
         }
         header {
             text-align: center;
@@ -26,78 +32,183 @@
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         .subtitle {
             color: #666;
             font-size: 1.2rem;
         }
+        .location {
+            color: #888;
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
         section {
             margin-bottom: 50px;
         }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
         .project-card {
             background: var(--secondary-bg);
-            border-radius: 12px;
-            padding: 25px;
+            border-radius: 16px;
+            padding: 30px;
             margin-bottom: 20px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .project-card:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .project-title {
             font-size: 1.5rem;
             margin-top: 0;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .project-badge {
+            display: inline-block;
+            background: #34C759;
+            color: white;
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-left: 10px;
+            font-weight: 500;
+            vertical-align: middle;
+        }
+        .project-description {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .features li {
+            padding: 5px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #34C759;
+            font-weight: bold;
+        }
+        .support-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            color: white;
+        }
+        .support-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .support-section p {
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+        .about-content {
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            padding: 30px;
         }
         footer {
             margin-top: 80px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+            padding-top: 25px;
+            border-top: 1px solid #e5e5e5;
             text-align: center;
             font-size: 0.9rem;
             color: #888;
         }
+        footer p {
+            margin: 8px 0;
+        }
+        footer a {
+            color: #666;
+        }
         a { color: var(--primary-color); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .coming-soon {
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>nyannpasu95</h1>
         <div class="subtitle">Independent Developer & Tool Maker</div>
+        <div class="location">Based in Tokyo, Japan</div>
     </header>
 
     <section>
-        <h2>Featured Projects</h2>
-        
-        <div class="project-card">
-            <h3 class="project-title">MagicTapper</h3>
-            <p><strong>Enhance your Apple Magic Mouse.</strong></p>
-            <p>MagicTapper brings trackpad-style tap-to-click functionality to the Apple Magic Mouse. It allows for a smoother, quieter, and more ergonomic experience by reducing the need for physical clicks.</p>
-            <!-- You can add a download link here later -->
-            <!-- <p><a href="LINK_TO_REPO_OR_DOWNLOAD">View Project &rarr;</a></p> -->
-        </div>
+        <h2>Projects</h2>
 
         <div class="project-card">
-            <h3 class="project-title">More Coming Soon</h3>
-            <p>I am currently working on new tools to improve productivity and workflow. Check back later for updates.</p>
+            <h3 class="project-title">MagicTapper <span class="project-badge">Free</span></h3>
+            <p class="project-description"><strong>Tap-to-click for Apple Magic Mouse</strong></p>
+            <p>MagicTapper brings trackpad-style tap-to-click functionality to the Apple Magic Mouse. Enjoy a smoother, quieter, and more ergonomic experience by reducing the need for physical clicks.</p>
+            <ul class="features">
+                <li>Natural tap-to-click gestures</li>
+                <li>Reduces finger fatigue and noise</li>
+                <li>Lightweight and runs in the background</li>
+                <li>Compatible with macOS</li>
+            </ul>
         </div>
+
+        <div class="project-card coming-soon">
+            <h3 class="project-title">More Coming Soon</h3>
+            <p class="project-description">New tools and utilities are in development. Stay tuned for updates!</p>
+        </div>
+    </section>
+
+    <section class="support-section">
+        <h2>Support My Work</h2>
+        <p>If you find my tools useful, consider buying me a coffee! Your support helps me continue creating free software.</p>
+        <a href="https://buymeacoffee.com/nyannpasu95" class="btn btn-primary" target="_blank" rel="noopener">Buy Me a Coffee</a>
     </section>
 
     <section>
         <h2>About</h2>
-        <p>I create software tools designed to solve specific problems and enhance user interaction with their devices.</p>
+        <div class="about-content">
+            <p>Hi, I'm <strong>Yuhang Su</strong>, an independent developer based in Tokyo, Japan. I create software tools designed to solve everyday problems and enhance the way people interact with their devices.</p>
+            <p>My focus is on building simple, effective utilities for macOS that improve productivity and user experience. All my current tools are free to use, and I rely on community support to keep developing.</p>
+            <p>Have questions or feedback? Feel free to reach out!</p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 nyannpasu95. All rights reserved.</p>
+        <p>&copy; 2026 Yuhang Su (nyannpasu95). All rights reserved.</p>
         <p>
-            <!-- IMPORTANT: Update this email for Stripe verification -->
-            <a href="mailto:your-email@example.com">Contact Support</a>
-            &nbsp;|&nbsp;
-            <a href="#">Privacy Policy</a>
-            &nbsp;|&nbsp;
-            <a href="#">Terms of Service</a>
+            <a href="mailto:suyuhang1995@gmail.com">Contact</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="privacy.html">Privacy Policy</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="terms.html">Terms of Service</a>
         </p>
     </footer>
 </body>
