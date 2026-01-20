@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>MagicTapper - Tap to Click for Apple Magic Mouse | Free Download</title>
+    <meta name="title" content="MagicTapper - Tap to Click for Apple Magic Mouse | Free Download">
+    <meta name="description" content="Transform your Apple Magic Mouse with trackpad-style gestures. Single tap to click, double-tap and hold to drag. Free macOS utility that reduces finger fatigue and extends mouse lifespan.">
+    <meta name="keywords" content="MagicTapper, Magic Mouse tap to click, double tap drag, Magic Mouse like trackpad, Apple Magic Mouse gestures, macOS utilities, Mac productivity, free software, tap gestures, ergonomic mouse, Magic Mouse enhancement">
+    <meta name="author" content="Yuhang Su">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nyannpasu95.github.io/magictapper.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nyannpasu95.github.io/magictapper.html">
+    <meta property="og:title" content="MagicTapper - Tap to Click for Apple Magic Mouse">
+    <meta property="og:description" content="Transform your Apple Magic Mouse with trackpad-style gestures. Single tap to click, double-tap and hold to drag. Free macOS utility.">
+    <meta property="og:image" content="https://nyannpasu95.github.io/MagicTapper.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://nyannpasu95.github.io/magictapper.html">
+    <meta name="twitter:title" content="MagicTapper - Tap to Click for Apple Magic Mouse">
+    <meta name="twitter:description" content="Transform your Apple Magic Mouse with trackpad-style gestures. Single tap to click, double-tap and hold to drag.">
+    <meta name="twitter:image" content="https://nyannpasu95.github.io/MagicTapper.png">
+
+    <!-- Structured Data for Software -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MagicTapper",
+        "operatingSystem": "macOS",
+        "applicationCategory": "UtilitiesApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "Tap-to-click functionality for Apple Magic Mouse. Single tap to click, double-tap and hold to drag. Enjoy a smoother, quieter, and more ergonomic experience.",
+        "downloadUrl": "https://github.com/nyannpasu95/MagicTapper/releases/download/v1.0.0/MagicTapper-v1.0.0.zip",
+        "softwareVersion": "1.0.0",
+        "author": {
+            "@type": "Person",
+            "name": "Yuhang Su",
+            "url": "https://nyannpasu95.github.io"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "1"
+        }
+    }
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does MagicTapper work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "MagicTapper adds trackpad-style gestures to your Apple Magic Mouse. Simply tap the mouse surface to click instead of pressing the physical button. Double-tap and hold to drag items - just like on a MacBook trackpad."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is MagicTapper compatible with my Mac?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "MagicTapper works with all macOS versions and is compatible with Apple Magic Mouse (first and second generation). It requires minimal system resources and runs silently in the background."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does it work like the MacBook trackpad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! MagicTapper brings the same intuitive tap gestures from MacBook trackpads to your Magic Mouse. Single tap to click, double-tap and hold to drag - making your Magic Mouse feel like a natural extension of your trackpad experience."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is MagicTapper free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, MagicTapper is completely free to download and use. If you find it helpful, you can support development through Buy Me a Coffee, but it's entirely optional."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Will this reduce wear on my Magic Mouse?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely! By using tap gestures instead of physical clicks, you reduce mechanical wear on the mouse button, extend its lifespan, and enjoy a quieter working environment."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://nyannpasu95.github.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "MagicTapper",
+                "item": "https://nyannpasu95.github.io/magictapper.html"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333;
+            --bg-color: #fff;
+            --secondary-bg: #f5f5f7;
+            --accent-color: #FF6B6B;
+            --success-color: #34C759;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background: var(--bg-color);
+        }
+        .breadcrumb {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb span {
+            color: #888;
+            margin: 0 8px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0 0 20px 0;
+            font-weight: 700;
+        }
+        .hero .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .hero .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 15px 32px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .app-icon {
+            width: 150px;
+            height: 150px;
+            border-radius: 32px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-card {
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .how-it-works {
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .step {
+            text-align: center;
+        }
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+        .step h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        .step p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .requirements {
+            background: var(--secondary-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        .requirements h3 {
+            margin-top: 0;
+            text-align: left;
+        }
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+        .requirements li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+        }
+        .requirements li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .faq-section {
+            margin: 60px 0;
+        }
+        .faq-item {
+            background: var(--secondary-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 15px;
+        }
+        .faq-item h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+            color: #555;
+        }
+        .support-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            margin: 60px 0;
+        }
+        .support-section h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .support-section p {
+            opacity: 0.95;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        footer {
+            background: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #e5e5e5;
+        }
+        footer p {
+            margin: 8px 0;
+        }
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            .hero {
+                padding: 60px 20px;
+            }
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="/">← Back to Projects</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="MagicTapper.png" alt="MagicTapper Icon" class="app-icon">
+            <h1>MagicTapper</h1>
+            <p class="tagline">Transform Your Apple Magic Mouse with Trackpad-Style Tap Gestures</p>
+            <p>Single tap to click. Double-tap and hold to drag. Say goodbye to loud clicks and finger fatigue.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/nyannpasu95/MagicTapper/releases/download/v1.0.0/MagicTapper-v1.0.0.zip" class="btn btn-primary">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.749.749 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06l1.97 1.969Z"/></svg>
+                    Download v1.0.0 - Free
+                </a>
+                <a href="https://github.com/nyannpasu95/MagicTapper" class="btn btn-secondary" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👆</div>
+                <h3>Single Tap to Click</h3>
+                <p>Tap anywhere on the mouse surface to perform a click - just like your MacBook trackpad. No need to press the physical button.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✌️</div>
+                <h3>Double-Tap & Hold to Drag</h3>
+                <p>Double-tap and hold to drag files, text, or windows. The same intuitive gesture you already use on your trackpad.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤫</div>
+                <h3>Silent Operation</h3>
+                <p>Eliminate loud clicking sounds. Perfect for quiet environments like libraries, offices, or late-night work sessions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Reduces Finger Fatigue</h3>
+                <p>Stop straining your finger with hard clicks. Gentle taps are easier on your hand and reduce repetitive stress injury risk.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightweight & Fast</h3>
+                <p>Minimal memory footprint and CPU usage. Runs silently in the background without slowing down your Mac.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Extends Mouse Lifespan</h3>
+                <p>Reduce mechanical wear on your Magic Mouse button. Fewer physical clicks mean your mouse lasts longer.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download & Install</h3>
+                    <p>Download MagicTapper and move it to your Applications folder. No complicated setup required.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Launch the App</h3>
+                    <p>Open MagicTapper. It will run quietly in your menu bar, ready to enhance your Magic Mouse.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Tapping</h3>
+                    <p>Single tap to click, double-tap and hold to drag. It works instantly - no configuration needed!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="requirements">
+            <h3>System Requirements</h3>
+            <ul>
+                <li>macOS (all recent versions supported)</li>
+                <li>Apple Magic Mouse (1st or 2nd generation)</li>
+                <li>Minimal disk space (< 5 MB)</li>
+                <li>No additional dependencies required</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>How does MagicTapper work?</h3>
+                <p>MagicTapper adds trackpad-style gestures to your Apple Magic Mouse. Simply tap the mouse surface to click instead of pressing the physical button. Double-tap and hold to drag items - just like on a MacBook trackpad.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is MagicTapper compatible with my Mac?</h3>
+                <p>MagicTapper works with all macOS versions and is compatible with Apple Magic Mouse (first and second generation). It requires minimal system resources and runs silently in the background.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does it work like the MacBook trackpad?</h3>
+                <p>Yes! MagicTapper brings the same intuitive tap gestures from MacBook trackpads to your Magic Mouse. Single tap to click, double-tap and hold to drag - making your Magic Mouse feel like a natural extension of your trackpad experience.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is MagicTapper free?</h3>
+                <p>Yes, MagicTapper is completely free to download and use. If you find it helpful, you can support development through Buy Me a Coffee, but it's entirely optional.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will this reduce wear on my Magic Mouse?</h3>
+                <p>Absolutely! By using tap gestures instead of physical clicks, you reduce mechanical wear on the mouse button, extend its lifespan, and enjoy a quieter working environment.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I install MagicTapper?</h3>
+                <p>Simply download the ZIP file, extract it, and move MagicTapper to your Applications folder. Launch it and you're ready to go. No complex installation process required.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I customize the tap sensitivity?</h3>
+                <p>The current version uses optimized default settings that work well for most users. Future versions may include customization options based on user feedback.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="support-section">
+            <h2>Support This Project</h2>
+            <p>MagicTapper is free and always will be. If you find it useful, consider buying me a coffee!</p>
+            <p>Your support helps me continue developing free tools for the Mac community.</p>
+            <a href="https://buymeacoffee.com/suyuhang19i" class="btn btn-primary" target="_blank" rel="noopener">Buy Me a Coffee</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Yuhang Su (nyannpasu95). All rights reserved.</p>
+        <p>
+            <a href="/">Home</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="mailto:suyuhang1995@gmail.com">Contact</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="privacy.html">Privacy Policy</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="terms.html">Terms of Service</a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="tokushoho.html">特定商取引法</a>
+        </p>
+    </footer>
+</body>
+</html>
